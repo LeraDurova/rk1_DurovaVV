@@ -10,3 +10,4 @@ endif()
 add_executable(RK_1 main.cpp)
 add_executable(variant3_task1 variant3_task1.cpp)
 add_executable(variant3_task2 variant3_task2.cpp)
+
