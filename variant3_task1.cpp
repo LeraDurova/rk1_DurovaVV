@@ -60,7 +60,6 @@ void checker_operator() {
             lk.unlock();
         }
 
-        // имитация расхода запасов между раундами (атомарное уменьшение)
         for (int z = 0; z < kNumZones; ++z) {
             stock[z].fetch_sub(consume(rng));
         }
@@ -110,7 +109,7 @@ void filler_operator() {
     }
 }
 
-}  // namespace
+}
 
 int main() {
     init_console_utf8();
